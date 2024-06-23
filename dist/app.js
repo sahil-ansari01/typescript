@@ -9,5 +9,4 @@ const body_parser_1 = __importDefault(require("body-parser"));
 const app = (0, express_1.default)();
 app.use(body_parser_1.default.json());
 app.use(todos_1.default);
-app.use('/todo', todos_1.default);
 app.listen({ port: 3000 });
